@@ -28,7 +28,7 @@ void loop() {
 
   // If the rain sensor detects rain (LOW), rotate the servo motor continuously and turn on the buzzer
   if (rainState == LOW) {
-    myServo.write(180);  // Rotate the servo motor to 90 degrees
+    myServo.write(90);  // Rotate the servo motor to 90 degrees
     digitalWrite(buzzerPin, HIGH);  // Turn on the buzzer
   } else {
     // If no rain is detected, stop the servo motor and turn off the buzzer
